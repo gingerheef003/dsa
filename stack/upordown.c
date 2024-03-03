@@ -5,14 +5,14 @@
  * Write a program in C that can compute if the stack grows "up or down"
  * */
 
-bool upordown() {
-	int x, y;
+bool upordown(int *other) {
+	int x;
 
-	if(&x > &y) return true;
-	else return false;
+	if(!other) return upordown(&x);
+	else return &x > other;
 }
 
 int main() {
-	printf("%s\n", upordown() ? "Up" : "Down");
+	printf("%s\n", upordown(NULL) ? "Up" : "Down");
 	return 0;
 }
