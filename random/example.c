@@ -9,7 +9,7 @@ int main() {
 	printf("\n----------\n");
 
 	float f = 5.0;
-	printf("This section prints the same random floats (0-%f) for every execution:\n", f);
+	printf("This sekction prints the same random floats (0-%f) for every execution:\n", f);
 	for(int i = 0; i < 5; i++) {
 		printf("%f ", ((float) rand() / RAND_MAX * f));
 	}
